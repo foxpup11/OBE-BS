@@ -1,0 +1,78 @@
+
+<view class="update-container">
+ <view class="content">
+     <view class="form-box">
+
+    <!-- 无   shijuanmingcheng 普  -->
+    <view class="item-box">
+        <view class="item-label">实践考核名称</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.shijuanmingcheng==true}}"  placeholder="试卷名称" model:value="{{shijuanmingcheng}}" />
+    </view>
+
+<view class="item-box"    bindtap="uploadfengmian">
+    <view   class="item-label">封面</view>
+    <image  src="{{fengmianPath?fengmianPath:imgIcon}}" mode="aspectFill"  class="item-img"></image>
+</view>
+    <com-edit></com-edit>
+    <view class="item-box"  >
+        <view class="item-label">发布时间</view>
+        <view class="down-item-picker"  bindtap="onfabushijianTap">
+            <view class="down-item-picker-text">         {{fabushijian}}</view>
+        </view>
+    </view>
+    <com-date isShowPicker="{{showfabushijian}}" bind:dateHandler="fabushijianTap"></com-date>
+
+    <!-- 无   jiaoshigonghao 普  -->
+    <view class="item-box">
+        <view class="item-label">教师工号</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.jiaoshigonghao==true}}"  placeholder="教师工号" model:value="{{jiaoshigonghao}}" />
+    </view>
+
+
+    <!-- 无   jiaoshixingming 普  -->
+    <view class="item-box">
+        <view class="item-label">教师姓名</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.jiaoshixingming==true}}"  placeholder="教师姓名" model:value="{{jiaoshixingming}}" />
+    </view>
+
+<view class="item-box"  >
+    <view class="item-label">实践考核简述</view>
+
+    <textarea model:value="{{timujianshu}}" placeholder="题目简述"     data-info="{{timujianshu}}" maxlength="300" id="timujianshu"></textarea>
+</view>
+
+     </view>
+
+
+     <view class="btn-box">
+
+
+
+  <button     class="submit-btn" bindtap="submit">提交</button>
+     </view>
+
+
+    </view>
+
+</view>

@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+
+  },
+  "navigationBarTitleText": "授课信息",
+  "navigationBarBackgroundColor":"#FFFFFF",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 50
+
+}

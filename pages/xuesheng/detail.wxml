@@ -1,0 +1,76 @@
+<view class="detail-container">
+<view class="content"   bind:tap="authTap">
+
+
+
+
+
+
+
+<view class="detail-box">
+
+
+    <!-- ${column.loginUser}, xueshengxingming,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">学生姓名：</view>
+<view class="detail-item-text">{{detailList.xueshengxingming}}</view>
+</view>
+
+
+<view class="detail-detail-img-box">
+<view class="detail-item-label">头像：</view>
+<image class="detail-detail-img-img" wx:if="{{detailList.touxiang}}"  src="{{baseURL+picture[0]}}"></image>
+</view>
+    <!-- ${column.loginUser}, xingbie,下-->
+<view class="detail-item-box" >
+<view class="detail-item-label">性别：</view>
+<view class="detail-item-text">{{detailList.xingbie}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, shoujihaoma,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">手机号码：</view>
+<view class="detail-item-text">{{detailList.shoujihaoma}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, banji,下-->
+<view class="detail-item-box" >
+<view class="detail-item-label">班级：</view>
+<view class="detail-item-text">{{detailList.banji}}</view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</view>
+
+
+
+
+
+
+
+
+<view class="operate-box">
+
+
+    
+
+
+</view>
+
+</view>
+</view>

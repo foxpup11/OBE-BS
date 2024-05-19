@@ -1,0 +1,32 @@
+
+<view class="update-container">
+ <view class="content">
+     <view class="form-box">
+
+    <!-- 无   zhuanye 普  -->
+    <view class="item-box">
+        <view class="item-label">专业</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.zhuanye==true}}"  placeholder="专业" model:value="{{zhuanye}}" />
+    </view>
+
+     </view>
+
+
+     <view class="btn-box">
+
+
+
+  <button     class="submit-btn" bindtap="submit">提交</button>
+     </view>
+
+
+    </view>
+
+</view>

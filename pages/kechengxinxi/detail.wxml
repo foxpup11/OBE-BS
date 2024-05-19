@@ -1,0 +1,125 @@
+<view class="detail-container">
+<view class="content"   bind:tap="authTap">
+
+
+
+
+
+
+
+
+
+
+<view class="detail-box">
+
+
+    <!-- ${column.loginUser}, kechengbianhao,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">课程编号：</view>
+<view class="detail-item-text">{{detailList.kechengbianhao}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, kechengmingcheng,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">课程名称：</view>
+<view class="detail-item-text">{{detailList.kechengmingcheng}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, kechenghao,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">课程号：</view>
+<view class="detail-item-text">{{detailList.kechenghao}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, xueqi,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">学期：</view>
+<view class="detail-item-text">{{detailList.xueqi}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, xuenian,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">学年：</view>
+<view class="detail-item-text">{{detailList.xuenian}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, zhuanye,下-->
+<view class="detail-item-box" >
+<view class="detail-item-label">专业：</view>
+<view class="detail-item-text">{{detailList.zhuanye}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, shangkeshijian,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">上课时间：</view>
+<view class="detail-item-text">{{detailList.shangkeshijian}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, kechengxingzhi,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">课程性质：</view>
+<view class="detail-item-text">{{detailList.kechengxingzhi}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, jiaoshigonghao,下2-->
+<view class="detail-item-box" >
+<view class="detail-item-label">教师工号：</view>
+<view class="detail-item-text">{{detailList.jiaoshigonghao}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, jiaoshixingming,随-->
+<view class="detail-item-box" >
+<view class="detail-item-label">教师姓名：</view>
+<view class="detail-item-text">{{detailList.jiaoshixingming}}</view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</view>
+
+
+
+
+
+
+
+
+<view class="operate-box">
+<button  class="common-btn"  wx:if="{{shoukexinxiShow}}"
+     data-info="shoukexinxi,'','',''" bind:tap="onAcrossTap" >
+授课
+</button>
+    <button  class="common-btn"  wx:if="{{!shoukexinxiShow}}"
+             data-info="shoukexinxi,'','',''" bind:tap="onAcrossTap" >
+        授课
+    </button>
+
+
+    
+
+
+</view>
+
+</view>
+</view>

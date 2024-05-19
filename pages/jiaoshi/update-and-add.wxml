@@ -1,0 +1,86 @@
+
+<view class="update-container">
+ <view class="content">
+     <view class="form-box">
+
+    <!-- 无   jiaoshigonghao 普  -->
+    <view class="item-box">
+        <view class="item-label">教师工号</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.jiaoshigonghao==true}}"  placeholder="教师工号" model:value="{{jiaoshigonghao}}" />
+    </view>
+
+
+    <!-- 无   mima 普  -->
+    <view class="item-box">
+        <view class="item-label">密码</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.mima==true}}"  placeholder="密码" model:value="{{mima}}" />
+    </view>
+
+
+    <!-- 无   jiaoshixingming 普  -->
+    <view class="item-box">
+        <view class="item-label">教师姓名</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.jiaoshixingming==true}}"  placeholder="教师姓名" model:value="{{jiaoshixingming}}" />
+    </view>
+
+<view class="item-box"    bindtap="uploadtouxiang">
+    <view   class="item-label">头像</view>
+    <image  src="{{touxiangPath?touxiangPath:imgIcon}}" mode="aspectFill"  class="item-img"></image>
+</view>
+
+    <!-- 无   lianxidianhua 普  -->
+    <view class="item-box">
+        <view class="item-label">联系电话</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.lianxidianhua==true}}"  placeholder="联系电话" model:value="{{lianxidianhua}}" />
+    </view>
+
+<view class="item-box">
+    <view class="item-label" >性别</view>
+    <picker   class="down-item-picker"     bindchange="xingbieChange" value="{{xingbieIndex}}"  range="{{xingbieList}}">
+                <view class="down-item-picker-text">
+                    {{xingbieIndex||xingbieIndex==0?xingbieList[xingbieIndex]:"请选择性别"}}
+                </view>
+    </picker>
+</view>
+     </view>
+
+
+     <view class="btn-box">
+
+
+
+  <button     class="submit-btn" bindtap="submit">提交</button>
+     </view>
+
+
+    </view>
+
+</view>

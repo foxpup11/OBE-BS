@@ -1,0 +1,154 @@
+<view class="detail-container">
+<view class="content"   bind:tap="authTap">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<view class="detail-box">
+
+
+    <!-- ${column.loginUser}, kechengbianhao,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">课程编号：</view>
+<view class="detail-item-text">{{detailList.kechengbianhao}}</view>
+</view>
+
+
+<view class="detail-item-box" >
+<view class="detail-item-label">课程名称：</view>
+<view class="detail-item-text">{{detailList.kechengmingcheng}}</view>
+</view>
+<view class="detail-item-box" >
+<view class="detail-item-label">课程号：</view>
+<view class="detail-item-text">{{detailList.kechenghao}}</view>
+</view>
+    <!-- ${column.loginUser}, xueqi,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">学期：</view>
+<view class="detail-item-text">{{detailList.xueqi}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, xuenian,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">学年：</view>
+<view class="detail-item-text">{{detailList.xuenian}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, zhuanye,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">专业：</view>
+<view class="detail-item-text">{{detailList.zhuanye}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, shangkeshijian,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">上课时间：</view>
+<view class="detail-item-text">{{detailList.shangkeshijian}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, kechengxingzhi,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">课程性质：</view>
+<view class="detail-item-text">{{detailList.kechengxingzhi}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, jiaoshigonghao,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">教师工号：</view>
+<view class="detail-item-text">{{detailList.jiaoshigonghao}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, jiaoshixingming,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">教师姓名：</view>
+<view class="detail-item-text">{{detailList.jiaoshixingming}}</view>
+</view>
+
+
+<view class="detail-item-box" >
+<view class="detail-item-label">授课时间：</view>
+<view class="detail-item-text">{{detailList.addtime}}</view>
+</view>
+    <!-- ${column.loginUser}, xuesheng,下-->
+<view class="detail-item-box" >
+<view class="detail-item-label">学生：</view>
+<view class="detail-item-text">{{detailList.xuesheng}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, dachengdu1,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">课程指标1达成度占比（百分制）：</view>
+<view class="detail-item-text">{{detailList.dachengdu1}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, dachengdu2,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">课程指标2达成度占比（百分制）：</view>
+<view class="detail-item-text">{{detailList.dachengdu2}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, dachengdu3,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">课程指标3达成度占比（百分制）：</view>
+<view class="detail-item-text">{{detailList.dachengdu3}}</view>
+</view>
+
+<view class="detail-item-box" >
+<view class="detail-item-label">目前的不足：</view>
+<view class="detail-item-text">达成度目标一的内容达成较好。对于目标二和三，面向对象思想需要继续巩固提升,对JAVA相关的组件掌握不够熟练-2024.04.07更新。
+</view>
+<!-- <view class="my-chart">
+<ec-canvas id="mychart-dom" canvas-id="mychart" ec="{{ec}}"></ec-canvas>>
+</view>> -->
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+</view>
+
+
+
+
+
+
+
+
+<view class="operate-box">
+
+
+    
+
+
+</view>
+
+</view>
+</view>

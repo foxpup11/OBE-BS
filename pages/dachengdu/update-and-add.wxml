@@ -1,0 +1,128 @@
+
+<view class="update-container">
+ <view class="content">
+     <view class="form-box">
+<view class="item-box">
+    <view class="item-label" >课程编号</view>
+    <picker   class="down-item-picker"     bindchange="kechengbianhaoChange" value="{{kechengbianhaoIndex}}"  range="{{kechengbianhaoList}}">
+                <view class="down-item-picker-text">
+                    {{kechengbianhaoIndex||kechengbianhaoIndex==0?kechengbianhaoList[kechengbianhaoIndex]:"请选择课程编号"}}
+                </view>
+    </picker>
+</view>
+    <view class="item-box">
+        <!-- 随 -->
+
+        <view class="item-label">课程名称</view>
+        <input  class="item-input" type="text"   placeholder="课程名称" model:value="{{kechengmingcheng}}" />
+    </view>
+    <view class="item-box">
+        <!-- 随 -->
+
+        <view class="item-label">课程号</view>
+        <input  class="item-input" type="text"   placeholder="课程号" model:value="{{kechenghao}}" />
+    </view>
+
+    <!-- 无   guochengkaohe 普  -->
+    <view class="item-box">
+        <view class="item-label">过程考核</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.guochengkaohe==true}}"  placeholder="过程考核" model:value="{{guochengkaohe}}" />
+    </view>
+
+
+    <!-- 无   shijiankaohe 普  -->
+    <view class="item-box">
+        <view class="item-label">实践考核</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.shijiankaohe==true}}"  placeholder="实践考核" model:value="{{shijiankaohe}}" />
+    </view>
+
+
+    <!-- 无   qimokaohe 普  -->
+    <view class="item-box">
+        <view class="item-label">期末考核</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.qimokaohe==true}}"  placeholder="期末考核" model:value="{{qimokaohe}}" />
+    </view>
+
+    <view  class="item-box">
+        <view  class="item-label">达成度</view>
+        <view  class="item-text">
+            {{dachengdu}}
+        </view>
+    </view>
+
+    <!-- 无   beizhu 普  -->
+    <view class="item-box">
+        <view class="item-label">备注</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.beizhu==true}}"  placeholder="备注" model:value="{{beizhu}}" />
+    </view>
+
+
+    <!-- 无   jiaoshigonghao 普  -->
+    <view class="item-box">
+        <view class="item-label">教师工号</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.jiaoshigonghao==true}}"  placeholder="教师工号" model:value="{{jiaoshigonghao}}" />
+    </view>
+
+
+    <!-- 无   jiaoshixingming 普  -->
+    <view class="item-box">
+        <view class="item-label">教师姓名</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.jiaoshixingming==true}}"  placeholder="教师姓名" model:value="{{jiaoshixingming}}" />
+    </view>
+
+     </view>
+
+
+     <view class="btn-box">
+
+
+
+  <button     class="submit-btn" bindtap="submit">提交</button>
+     </view>
+
+
+    </view>
+
+</view>

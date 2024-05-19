@@ -1,0 +1,10 @@
+{
+
+  "usingComponents": {
+    "com-popup": "/component/com-popup/com-popup"
+  },
+
+  "navigationBarTitleText": "基于OBE理念的过程考核与达成度分析系统",
+  "navigationBarBackgroundColor":"#FFFFFF",
+  "navigationBarTextStyle": "black"
+}

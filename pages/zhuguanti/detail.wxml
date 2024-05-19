@@ -1,0 +1,94 @@
+<view class="detail-container">
+<view class="content"   bind:tap="authTap">
+
+
+<swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{5000}}" class="swiper" vertical="{{false}}" interval="{{5000}}" duration="{{500}}"  indicator-color='#ffffff'   indicator-active-color="#ff746d"   autoplay="{{true}}"  circular="{{true}}">
+<swiper-item class="swiper-item"  wx:for="{{picture}}"   wx:key="{{index}}">
+    <image src="{{baseURL+item}}" mode="aspectFit"   class="swiper-img"></image>
+    <view   wx:if="$conf.menu.flag"  class="swiper-title">{{item.title}}</view>
+</swiper-item>
+</swiper>
+
+
+
+
+
+<view class="detail-box">
+
+
+<view class="detail-item-box" >
+<view class="detail-item-label">实践考核名称：</view>
+<view class="detail-item-text">{{detailList.shijuanmingcheng}}</view>
+</view>
+<view class="detail-detail-img-box">
+<view class="detail-item-label">封面：</view>
+<image class="detail-detail-img-img" wx:if="{{detailList.fengmian}}"  src="{{baseURL+picture[0]}}"></image>
+</view>
+<view class="detail-item-box" >
+<view class="detail-item-label">发布时间：</view>
+<view class="detail-item-text">{{detailList.addtime}}</view>
+</view>
+    <!-- ${column.loginUser}, jiaoshigonghao,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">教师工号：</view>
+<view class="detail-item-text">{{detailList.jiaoshigonghao}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, jiaoshixingming,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">教师姓名：</view>
+<view class="detail-item-text">{{detailList.jiaoshixingming}}</view>
+</view>
+
+
+
+
+
+
+<view class="detail-item-box">
+<view class="detail-item-label">实践考核简述</view>
+<view class="detail-item-text">{{detailList.timujianshu}}</view>
+</view>
+
+
+
+<view class="textarea-box">
+<view class="textarea-label">实践考核详情</view>
+<view class="textarea-text">
+    <rich-text nodes="{{detailList.timuxiangqing}}"></rich-text>
+</view>
+</view>
+
+
+
+
+
+
+</view>
+
+
+
+
+
+
+
+
+<view class="operate-box">
+<button  class="common-btn"  wx:if="{{zhuguantitijiaoShow}}"
+     data-info="zhuguantitijiao,'','',''" bind:tap="onAcrossTap" >
+提交
+</button>
+    <button  class="common-btn"  wx:if="{{!zhuguantitijiaoShow}}"
+             data-info="zhuguantitijiao,'','',''" bind:tap="onAcrossTap" >
+        提交
+    </button>
+
+
+    
+
+
+</view>
+
+</view>
+</view>

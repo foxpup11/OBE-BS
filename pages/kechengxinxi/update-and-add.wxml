@@ -1,0 +1,138 @@
+
+<view class="update-container">
+ <view class="content">
+     <view class="form-box">
+
+    <!-- 无   kechengbianhao 普  -->
+    <view class="item-box">
+        <view class="item-label">课程编号</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.kechengbianhao==true}}"  placeholder="课程编号" model:value="{{kechengbianhao}}" />
+    </view>
+
+
+    <!-- 无   kechengmingcheng 普  -->
+    <view class="item-box">
+        <view class="item-label">课程名称</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.kechengmingcheng==true}}"  placeholder="课程名称" model:value="{{kechengmingcheng}}" />
+    </view>
+
+
+    <!-- 无   kechenghao 普  -->
+    <view class="item-box">
+        <view class="item-label">课程号</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.kechenghao==true}}"  placeholder="课程号" model:value="{{kechenghao}}" />
+    </view>
+
+
+    <!-- 无   xueqi 普  -->
+    <view class="item-box">
+        <view class="item-label">学期</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.xueqi==true}}"  placeholder="学期" model:value="{{xueqi}}" />
+    </view>
+
+
+    <!-- 无   xuenian 普  -->
+    <view class="item-box">
+        <view class="item-label">学年</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.xuenian==true}}"  placeholder="学年" model:value="{{xuenian}}" />
+    </view>
+
+<view class="item-box">
+    <view class="item-label" >专业</view>
+    <picker   class="down-item-picker"     bindchange="zhuanyeChange" value="{{zhuanyeIndex}}"  range="{{zhuanyeList}}">
+                <view class="down-item-picker-text">
+                    {{zhuanyeIndex||zhuanyeIndex==0?zhuanyeList[zhuanyeIndex]:"请选择专业"}}
+                </view>
+    </picker>
+</view>
+
+    <!-- 无   shangkeshijian 普  -->
+    <view class="item-box">
+        <view class="item-label">上课时间</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.shangkeshijian==true}}"  placeholder="上课时间" model:value="{{shangkeshijian}}" />
+    </view>
+
+
+    <!-- 无   kechengxingzhi 普  -->
+    <view class="item-box">
+        <view class="item-label">课程性质</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.kechengxingzhi==true}}"  placeholder="课程性质" model:value="{{kechengxingzhi}}" />
+    </view>
+
+<view class="item-box">
+    <view class="item-label" >教师工号</view>
+    <picker   class="down-item-picker"     bindchange="jiaoshigonghaoChange" value="{{jiaoshigonghaoIndex}}"  range="{{jiaoshigonghaoList}}">
+                <view class="down-item-picker-text">
+                    {{jiaoshigonghaoIndex||jiaoshigonghaoIndex==0?jiaoshigonghaoList[jiaoshigonghaoIndex]:"请选择教师工号"}}
+                </view>
+    </picker>
+</view>
+    <view class="item-box">
+        <!-- 随 -->
+
+        <view class="item-label">教师姓名</view>
+        <input  class="item-input" type="text"   placeholder="教师姓名" model:value="{{jiaoshixingming}}" />
+    </view>
+     </view>
+
+
+     <view class="btn-box">
+
+
+
+  <button     class="submit-btn" bindtap="submit">提交</button>
+     </view>
+
+
+    </view>
+
+</view>

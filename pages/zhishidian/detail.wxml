@@ -1,0 +1,53 @@
+<view class="detail-container">
+<view class="content"   bind:tap="authTap">
+
+
+<view class="detail-box">
+
+
+    <!-- ${column.loginUser}, zhishidian,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">知识点：</view>
+<view class="detail-item-text">{{detailList.zhishidian}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, dachengdumubiao,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">达成度目标：</view>
+<view class="detail-item-text">{{detailList.dachengdumubiao}}</view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</view>
+
+
+
+
+
+
+
+
+<view class="operate-box">
+
+
+    
+
+
+</view>
+
+</view>
+</view>

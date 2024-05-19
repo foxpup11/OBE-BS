@@ -1,0 +1,26 @@
+<view class="forumCenter-container">
+    <view class="search">
+        <input class="search-input" model:value="{{name}}" type="text" id="" placeholder="阶段测试名称">
+        <text class="iconfont icon-sousuo4 icons"></text>
+        </input>
+        <view class="searchBtn" bind:tap="searhandler">搜索</view>
+    </view>
+
+    <view class="content">
+        <view class="title">阶段测试列表</view>
+        <view class="list">
+            <view class="list-item" wx:for="{{currentList}}" wx:key="{{index}}">
+                <view class="right">
+                    <view>{{item.name}}</view>
+                    <view>考试时长:{{item.time}}分钟</view>
+                    <view>
+                        <button bindtap="examTap" data-id="{{item.id}}">开始考试</button>
+                    </view>
+                </view>
+            </view>
+            <view class="nodata">
+                ~没有更多了~
+            </view>
+        </view>
+    </view>
+</view>

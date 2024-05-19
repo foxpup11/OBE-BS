@@ -1,0 +1,70 @@
+<view class="exam-container">
+    <view class="box">
+        <view class="title">
+            {{info.name}}（共{{ num+1+"/"+examList.length}}题目）
+        </view>
+        <view class="countdown">
+            倒计时:{{reversetime}}
+        </view>
+        <view class="quite">
+            <button type="warn" bind:tap="quitTap" style=" font-size: 28rpx;">退出考试</button>
+        </view>
+    <view class="content">
+        <view class="topic">
+            {{examList[num].questionname}}
+            <view class="notice" wx:if="{{examList[num].type==0}}">单选题</view>
+            <view class="judgment" wx:if="{{examList[num].type==2}}">判断题</view>
+            <view class="multipleSel" wx:if="{{examList[num].type==1}}">多选题</view>
+            <view class="fill" wx:if="{{examList[num].type==3}}">填空题</view>
+        </view>
+        <view class="answer" wx:for="{{examList[num].options}}" wx:key="index">
+            <view>{{item.code+". "}}{{item.text}}</view>
+        </view>
+        <view style="display: flex;align-items: center;">
+            <view class="result" wx:if="{{error}}">
+                <view class="error">答案错误</view>
+                <text>我的答案：{{myanswer}}</text>
+            </view>
+            <view class="result" wx:if="{{correct}}">
+                <view class="notice">答案正确</view>
+                <text>我的答案：{{myanswer}}</text>
+            </view>
+        </view>
+        <view wx:if="{{examList[num].type==1}}">
+            <input type="text" placeholder="请输入答案" model:value="{{myanswer}}" />
+            <com-manySel parentList="{{manyOptions}}" showValue="{{true}}" bind:acceptChild="acceptChild">
+            </com-manySel>
+        </view>
+        <view wx:if="{{examList[num].type!=1 && examList[num].type!=3 }}">
+            <picker mode="selector" disabled="{{isdisabled}}" range="{{optionsCode}}" value="{{index}}" bindchange="answerChange">
+                <input type="text" placeholder="请输入答案" model:value="{{myanswer}}" />
+            </picker>
+        </view>
+        <view wx:if="{{examList[num].type==3 }}">
+            <input type="text" placeholder="请输入答案" model:value="{{myanswer}}" />
+          </view>
+        <view>
+            <view class="check" wx:if="{{nextShow||end}}" bind:tap="analysisTap">
+                查看解析
+                <view class="analysis" wx:if="{{analysis}}">
+                    <view>正确答案：{{examList[num].answer}}</view>
+                    <view>解析：{{examList[num].analysis}}</view>
+                </view>
+              </view>
+            
+            <button class="submit" wx:if="{{subShow}}" bind:tap="submit">提交</button>
+            <button class="next-question" wx:if="{{nextShow}}" bind:tap="nextTap"> 下一题</button>
+            <view wx:if="{{end}}">
+                成绩：{{score}}
+            </view>
+            <button wx:if="{{end}}" type="warn" class="end" bind:tap="quitTap">结束</button>
+        </view>
+    </view>
+</view>
+
+
+
+
+
+
+    </view>

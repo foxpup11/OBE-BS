@@ -1,0 +1,88 @@
+
+<view class="update-container">
+ <view class="content">
+     <view class="form-box">
+<view class="item-box">
+    <view class="item-label" >学号</view>
+    <picker   class="down-item-picker"     bindchange="xuehaoChange" value="{{xuehaoIndex}}"  range="{{xuehaoList}}">
+                <view class="down-item-picker-text">
+                    {{xuehaoIndex||xuehaoIndex==0?xuehaoList[xuehaoIndex]:"请选择学号"}}
+                </view>
+    </picker>
+</view>
+    <view class="item-box">
+        <!-- 随 -->
+
+        <view class="item-label">学生姓名</view>
+        <input  class="item-input" type="text"   placeholder="学生姓名" model:value="{{xueshengxingming}}" />
+    </view>
+
+    <!-- 无   biaoti 普  -->
+    <view class="item-box">
+        <view class="item-label">标题</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.biaoti==true}}"  placeholder="标题" model:value="{{biaoti}}" />
+    </view>
+
+
+    <!-- 无   neirong 普  -->
+    <view class="item-box">
+        <view class="item-label">内容</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.neirong==true}}"  placeholder="内容" model:value="{{neirong}}" />
+    </view>
+
+
+    <!-- 无   jiaoshigonghao 普  -->
+    <view class="item-box">
+        <view class="item-label">教师工号</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.jiaoshigonghao==true}}"  placeholder="教师工号" model:value="{{jiaoshigonghao}}" />
+    </view>
+
+
+    <!-- 无   jiaoshixingming 普  -->
+    <view class="item-box">
+        <view class="item-label">教师姓名</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.jiaoshixingming==true}}"  placeholder="教师姓名" model:value="{{jiaoshixingming}}" />
+    </view>
+
+     </view>
+
+
+     <view class="btn-box">
+
+
+
+  <button     class="submit-btn" bindtap="submit">提交</button>
+     </view>
+
+
+    </view>
+
+</view>

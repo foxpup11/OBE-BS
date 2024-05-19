@@ -1,0 +1,146 @@
+<view class="detail-container">
+<view class="content"   bind:tap="authTap">
+
+
+<swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{5000}}" class="swiper" vertical="{{false}}" interval="{{5000}}" duration="{{500}}"  indicator-color='#ffffff'   indicator-active-color="#ff746d"   autoplay="{{true}}"  circular="{{true}}">
+<swiper-item class="swiper-item"  wx:for="{{picture}}"   wx:key="{{index}}">
+    <image src="{{baseURL+item}}" mode="aspectFit"   class="swiper-img"></image>
+    <view   wx:if="$conf.menu.flag"  class="swiper-title">{{item.title}}</view>
+</swiper-item>
+</swiper>
+
+
+
+
+
+
+
+
+
+
+
+
+<view class="detail-box">
+
+
+<view class="detail-item-box" >
+<view class="detail-item-label">试卷名称：</view>
+<view class="detail-item-text">{{detailList.shijuanmingcheng}}</view>
+</view>
+<view class="detail-detail-img-box">
+<view class="detail-item-label">封面：</view>
+<image class="detail-detail-img-img" wx:if="{{detailList.fengmian}}"  src="{{baseURL+picture[0]}}"></image>
+</view>
+    <!-- ${column.loginUser}, pingfen,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">评分：</view>
+<view class="detail-item-text">{{detailList.pingfen}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, jiaoshigonghao,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">教师工号：</view>
+<view class="detail-item-text">{{detailList.jiaoshigonghao}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, jiaoshixingming,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">教师姓名：</view>
+<view class="detail-item-text">{{detailList.jiaoshixingming}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, zhishidian1,下-->
+<view class="detail-item-box" >
+<view class="detail-item-label">知识点1：</view>
+<view class="detail-item-text">{{detailList.zhishidian1}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, dabiaodu1,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">达标度1：</view>
+<view class="detail-item-text">{{detailList.dabiaodu1}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, zhishidian2,下-->
+<view class="detail-item-box" >
+<view class="detail-item-label">知识点2：</view>
+<view class="detail-item-text">{{detailList.zhishidian2}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, dabiaodu2,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">达标度2：</view>
+<view class="detail-item-text">{{detailList.dabiaodu2}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, zhishidian3,下-->
+<view class="detail-item-box" >
+<view class="detail-item-label">知识点3：</view>
+<view class="detail-item-text">{{detailList.zhishidian3}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, dabiaodu3,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">达标度3：</view>
+<view class="detail-item-text">{{detailList.dabiaodu3}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, xuehao,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">学号：</view>
+<view class="detail-item-text">{{detailList.xuehao}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, xueshengxingming,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">学生姓名：</view>
+<view class="detail-item-text">{{detailList.xueshengxingming}}</view>
+</view>
+
+
+
+
+
+
+<view class="detail-item-box">
+<view class="detail-item-label">题目简述</view>
+<view class="detail-item-text">{{detailList.timujianshu}}</view>
+</view>
+
+
+
+
+
+
+
+
+
+</view>
+
+
+
+
+
+
+
+
+<view class="operate-box">
+
+
+    
+
+
+</view>
+
+</view>
+</view>

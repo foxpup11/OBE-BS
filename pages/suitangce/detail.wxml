@@ -1,0 +1,98 @@
+<view class="detail-container">
+<view class="content"   bind:tap="authTap">
+
+
+
+
+
+
+
+<view class="detail-box">
+
+
+<view class="detail-item-box" >
+<view class="detail-item-label">学号：</view>
+<view class="detail-item-text">{{detailList.xuehao}}</view>
+</view>
+    <!-- ${column.loginUser}, xueshengxingming,随-->
+<view class="detail-item-box" >
+<view class="detail-item-label">学生姓名：</view>
+<view class="detail-item-text">{{detailList.xueshengxingming}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, biaoti,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">标题：</view>
+<view class="detail-item-text">{{detailList.biaoti}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, neirong,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">内容：</view>
+<view class="detail-item-text">{{detailList.neirong}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, jiaoshigonghao,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">教师工号：</view>
+<view class="detail-item-text">{{detailList.jiaoshigonghao}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, jiaoshixingming,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">教师姓名：</view>
+<view class="detail-item-text">{{detailList.jiaoshixingming}}</view>
+</view>
+
+
+
+
+
+
+<view class="detail-item-box">
+<view class="detail-item-label">回复内容</view>
+<view class="detail-item-text">{{detailList.shhf}}</view>
+</view>
+
+
+
+
+
+
+
+
+
+</view>
+
+
+
+
+
+
+
+
+<view class="operate-box">
+
+<button  class="wan"  bind:tap="onSHTap"  >回复</button>
+<com-popup id="bottomFrame" className="reply-popup">
+<view style="padding: 10px;display: flex;flex-direction: column;overflow: hidden;">
+<textarea style="width: 200px;" model:value="{{shhf}}" placeholder="请输入回复内容"></textarea>
+<view style="display: flex;justify-content: space-between;text-align: center;">
+    <button bind:tap="canlreply">取消</button>
+    <button bind:tap="reply">确认</button>
+</view>
+
+</view>
+</com-popup>
+
+    
+
+
+</view>
+
+</view>
+</view>

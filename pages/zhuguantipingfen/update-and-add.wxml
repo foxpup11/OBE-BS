@@ -1,0 +1,178 @@
+
+<view class="update-container">
+ <view class="content">
+     <view class="form-box">
+
+    <!-- 无   shijuanmingcheng 普  -->
+    <view class="item-box">
+        <view class="item-label">实践考核名称</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.shijuanmingcheng==true}}"  placeholder="试卷名称" model:value="{{shijuanmingcheng}}" />
+    </view>
+
+<view class="item-box"    bindtap="uploadfengmian">
+    <view   class="item-label">封面</view>
+    <image  src="{{fengmianPath?fengmianPath:imgIcon}}" mode="aspectFill"  class="item-img"></image>
+</view>
+
+    <!-- 无   pingfen 普  -->
+    <view class="item-box">
+        <view class="item-label">评分</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.pingfen==true}}"  placeholder="评分" model:value="{{pingfen}}" />
+    </view>
+
+
+    <!-- 无   jiaoshigonghao 普  -->
+    <view class="item-box">
+        <view class="item-label">教师工号</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.jiaoshigonghao==true}}"  placeholder="教师工号" model:value="{{jiaoshigonghao}}" />
+    </view>
+
+
+    <!-- 无   jiaoshixingming 普  -->
+    <view class="item-box">
+        <view class="item-label">教师姓名</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.jiaoshixingming==true}}"  placeholder="教师姓名" model:value="{{jiaoshixingming}}" />
+    </view>
+
+<view class="item-box">
+    <view class="item-label" >知识点1</view>
+    <picker   class="down-item-picker"     bindchange="zhishidian1Change" value="{{zhishidian1Index}}"  range="{{zhishidian1List}}">
+                <view class="down-item-picker-text">
+                    {{zhishidian1Index||zhishidian1Index==0?zhishidian1List[zhishidian1Index]:"请选择知识点1"}}
+                </view>
+    </picker>
+</view>
+
+    <!-- 无   dabiaodu1 普  -->
+    <view class="item-box">
+        <view class="item-label">达标度1</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.dabiaodu1==true}}"  placeholder="达标度1" model:value="{{dabiaodu1}}" />
+    </view>
+
+<view class="item-box">
+    <view class="item-label" >知识点2</view>
+    <picker   class="down-item-picker"     bindchange="zhishidian2Change" value="{{zhishidian2Index}}"  range="{{zhishidian2List}}">
+                <view class="down-item-picker-text">
+                    {{zhishidian2Index||zhishidian2Index==0?zhishidian2List[zhishidian2Index]:"请选择知识点2"}}
+                </view>
+    </picker>
+</view>
+
+    <!-- 无   dabiaodu2 普  -->
+    <view class="item-box">
+        <view class="item-label">达标度2</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.dabiaodu2==true}}"  placeholder="达标度2" model:value="{{dabiaodu2}}" />
+    </view>
+
+<view class="item-box">
+    <view class="item-label" >知识点3</view>
+    <picker   class="down-item-picker"     bindchange="zhishidian3Change" value="{{zhishidian3Index}}"  range="{{zhishidian3List}}">
+                <view class="down-item-picker-text">
+                    {{zhishidian3Index||zhishidian3Index==0?zhishidian3List[zhishidian3Index]:"请选择知识点3"}}
+                </view>
+    </picker>
+</view>
+
+    <!-- 无   dabiaodu3 普  -->
+    <view class="item-box">
+        <view class="item-label">达标度3</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.dabiaodu3==true}}"  placeholder="达标度3" model:value="{{dabiaodu3}}" />
+    </view>
+
+
+    <!-- 无   xuehao 普  -->
+    <view class="item-box">
+        <view class="item-label">学号</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.xuehao==true}}"  placeholder="学号" model:value="{{xuehao}}" />
+    </view>
+
+
+    <!-- 无   xueshengxingming 普  -->
+    <view class="item-box">
+        <view class="item-label">学生姓名</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.xueshengxingming==true}}"  placeholder="学生姓名" model:value="{{xueshengxingming}}" />
+    </view>
+
+<view class="item-box"  >
+    <view class="item-label">题目简述</view>
+
+    <textarea model:value="{{timujianshu}}" placeholder="题目简述"     data-info="{{timujianshu}}" maxlength="300" id="timujianshu"></textarea>
+</view>
+
+     </view>
+
+
+     <view class="btn-box">
+
+
+
+  <button     class="submit-btn" bindtap="submit">提交</button>
+     </view>
+
+
+    </view>
+
+</view>

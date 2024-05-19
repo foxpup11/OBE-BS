@@ -1,0 +1,29 @@
+<view class="forumCenter-container">
+    <view class="content">
+        <view class="list">
+            <view class="list-item" wx:for="{{list}}" wx:key="{{index}}" bindtap="onDetailTap" data-item="{{item}}">
+                <view class="right">
+                    <view style="color: #6a7377;">{{item.papername}}</view>
+                    <view class="line">
+                        <span>{{item.questionname}}</span>
+                        <span>{{detailList.dachengdu}}</span>
+                        <span>-{{detailList.guochengkaohe}}</span>
+                    </view>
+                    <view class="line">
+                        <span>答案：{{item.answer}}</span>
+                        <span>本题分数:{{item.score}}</span>
+                        <span>我的得分:{{item.myscore}}</span>
+                    </view>
+                    <view>
+
+                        <view>我的答案：{{item.myanswer=="" || item.myanswer==null?'':item.myanswer}}</view>
+                        <span style="color: #6a7377;">关联达成度、达标率链接于题后</span>
+                    </view>
+                </view>
+            </view>
+            <view class="nodata">
+                ~没有更多了~
+            </view>
+        </view>
+    </view>
+</view>

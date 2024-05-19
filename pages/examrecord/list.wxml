@@ -1,0 +1,19 @@
+<view class="forumCenter-container">
+
+    <view class="content">
+        <view class="list">
+            <view class="list-item" wx:for="{{list}}" wx:key="{{index}}" bindtap="onDetailTap" data-item="{{item}}">
+                <view class="right">
+                    <view style="color:#686f74 ;">{{item.papername+' '+'('+item.username+')'}}</view>
+                    <view>
+                        <view style="background: red;color: white;width: 100%;padding: 20rpx;text-align: center;border-radius: 40px;">分数：{{item.myscore}}分</view>
+
+                    </view>
+                </view>
+            </view>
+            <view class="nodata">
+                ~没有更多了~
+            </view>
+        </view>
+    </view>
+</view>

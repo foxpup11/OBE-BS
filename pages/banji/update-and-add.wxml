@@ -1,0 +1,32 @@
+
+<view class="update-container">
+ <view class="content">
+     <view class="form-box">
+
+    <!-- 无   banji 普  -->
+    <view class="item-box">
+        <view class="item-label">班级</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.banji==true}}"  placeholder="班级" model:value="{{banji}}" />
+    </view>
+
+     </view>
+
+
+     <view class="btn-box">
+
+
+
+  <button     class="submit-btn" bindtap="submit">提交</button>
+     </view>
+
+
+    </view>
+
+</view>

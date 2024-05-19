@@ -1,0 +1,116 @@
+<view class="detail-container">
+<view class="content"   bind:tap="authTap">
+
+
+
+
+<swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{5000}}" class="swiper" vertical="{{false}}" interval="{{5000}}" duration="{{500}}"  indicator-color='#ffffff'   indicator-active-color="#ff746d"   autoplay="{{true}}"  circular="{{true}}">
+<swiper-item class="swiper-item"  wx:for="{{picture}}"   wx:key="{{index}}">
+    <image src="{{baseURL+item}}" mode="aspectFit"   class="swiper-img"></image>
+    <view   wx:if="$conf.menu.flag"  class="swiper-title">{{item.title}}</view>
+</swiper-item>
+</swiper>
+
+
+
+
+
+<view class="detail-box">
+
+<view class="price-box">
+<view  wx:if="{{islike}}" class="iconfont icon-likefill2  storeUp"  bind:tap="cancelLikeTap"></view>
+<view wx:else="" class="iconfont   icon-likeline1 cancel-storeUp"   bind:tap="likeTap"></view>
+</view>
+
+    <!-- ${column.loginUser}, kechengbianhao,下2-->
+<view class="detail-item-box" >
+<view class="detail-item-label">课程编号：</view>
+<view class="detail-item-text">{{detailList.kechengbianhao}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, kechengmingcheng,随-->
+<view class="detail-item-box" >
+<view class="detail-item-label">课程名称：</view>
+<view class="detail-item-text">{{detailList.kechengmingcheng}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, kechenghao,随-->
+<view class="detail-item-box" >
+<view class="detail-item-label">课程号：</view>
+<view class="detail-item-text">{{detailList.kechenghao}}</view>
+</view>
+
+
+<view class="detail-detail-img-box">
+<view class="detail-item-label">图片：</view>
+<image class="detail-detail-img-img" wx:if="{{detailList.tupian}}"  src="{{baseURL+picture[0]}}"></image>
+</view>
+    <!-- ${column.loginUser}, shijiankaohe,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">达成度指标一：</view>
+<view class="detail-item-text">{{detailList.shijiankaohe}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, guochengkaohe,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">达成度指标二：</view>
+<view class="detail-item-text">{{detailList.guochengkaohe}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, qimokaohe,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">达成度指标三：</view>
+<view class="detail-item-text">{{detailList.qimokaohe}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, beizhu,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">备注：</view>
+<view class="detail-item-text">{{detailList.beizhu}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, storeupnum,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">收藏数量：</view>
+<view class="detail-item-text">{{detailList.storeupnum}}</view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</view>
+
+
+
+
+
+
+
+
+<view class="operate-box">
+
+
+    
+
+
+</view>
+
+</view>
+</view>

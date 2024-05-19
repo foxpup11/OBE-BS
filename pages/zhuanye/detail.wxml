@@ -1,0 +1,45 @@
+<view class="detail-container">
+<view class="content"   bind:tap="authTap">
+
+<view class="detail-box">
+
+
+    <!-- ${column.loginUser}, zhuanye,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">专业：</view>
+<view class="detail-item-text">{{detailList.zhuanye}}</view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</view>
+
+
+
+
+
+
+
+
+<view class="operate-box">
+
+
+    
+
+
+</view>
+
+</view>
+</view>

@@ -1,0 +1,46 @@
+
+<view class="update-container">
+ <view class="content">
+     <view class="form-box">
+
+    <!-- 无   zhishidian 普  -->
+    <view class="item-box">
+        <view class="item-label">知识点</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.zhishidian==true}}"  placeholder="知识点" model:value="{{zhishidian}}" />
+    </view>
+
+
+    <!-- 无   dachengdumubiao 普  -->
+    <view class="item-box">
+        <view class="item-label">达成度目标</view>
+        <input  class="item-input"
+
+
+
+
+
+
+                type="text"  disabled="{{ro.dachengdumubiao==true}}"  placeholder="达成度目标" model:value="{{dachengdumubiao}}" />
+    </view>
+
+     </view>
+
+
+     <view class="btn-box">
+
+
+
+  <button     class="submit-btn" bindtap="submit">提交</button>
+     </view>
+
+
+    </view>
+
+</view>

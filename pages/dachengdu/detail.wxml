@@ -1,0 +1,117 @@
+<view class="detail-container">
+<view class="content"   bind:tap="authTap">
+
+
+
+
+
+
+
+
+
+
+<view class="detail-box">
+
+
+    <!-- ${column.loginUser}, kechengbianhao,下2-->
+<view class="detail-item-box" >
+<view class="detail-item-label">课程编号：</view>
+<view class="detail-item-text">{{detailList.kechengbianhao}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, kechengmingcheng,随-->
+<view class="detail-item-box" >
+<view class="detail-item-label">课程名称：</view>
+<view class="detail-item-text">{{detailList.kechengmingcheng}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, kechenghao,随-->
+<view class="detail-item-box" >
+<view class="detail-item-label">课程号：</view>
+<view class="detail-item-text">{{detailList.kechenghao}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, guochengkaohe,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">过程考核：</view>
+<view class="detail-item-text">{{detailList.guochengkaohe}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, shijiankaohe,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">实践考核：</view>
+<view class="detail-item-text">{{detailList.shijiankaohe}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, qimokaohe,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">期末考核：</view>
+<view class="detail-item-text">{{detailList.qimokaohe}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, dachengdu,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">达成度：</view>
+<view class="detail-item-text">{{detailList.dachengdu}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, beizhu,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">备注：</view>
+<view class="detail-item-text">{{detailList.beizhu}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, jiaoshigonghao,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">教师工号：</view>
+<view class="detail-item-text">{{detailList.jiaoshigonghao}}</view>
+</view>
+
+
+    <!-- ${column.loginUser}, jiaoshixingming,普-->
+<view class="detail-item-box" >
+<view class="detail-item-label">教师姓名：</view>
+<view class="detail-item-text">{{detailList.jiaoshixingming}}</view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</view>
+
+
+
+
+
+
+
+
+<view class="operate-box">
+
+
+    
+
+
+</view>
+
+</view>
+</view>

@@ -1,0 +1,81 @@
+<view class="register-container">
+<view class="content">
+<view class="userInfo-from">
+    <!-- xuehao，普,去  -->
+
+
+    <view class="item-box" wx:if="{{tableName=='xuesheng'}}"  >
+        <view class="item-label">学号</view>
+        <input  class="item-input" type="text"    disabled="true" placeholder="学号" model:value="{{xuehao}}" />
+    </view>
+    <!-- xueshengxingming，普,$column.unique  -->
+
+
+    <view class="item-box" wx:if="{{tableName=='xuesheng'}}"  >
+        <view class="item-label">学生姓名</view>
+        <input  class="item-input" type="text"    placeholder="学生姓名" model:value="{{xueshengxingming}}" />
+    </view>
+    <view class="item-box" wx:if="{{tableName=='xuesheng'}}" >
+        <view  class="item-label"   bindtap="touxiangTap"  >头像</view>
+        <image class="item-img"   bindtap="touxiangTap"   src="{{tempPathtouxiang}}" mode="aspectFill"></image>
+    </view>
+    <view class="item-box" wx:if="{{tableName=='xuesheng'}}">
+        <text   class="item-label"  >性别</text>
+        <picker   class="down-item-picker" mode="selector" range="{{xingbieList}}" value="{{xingbieIndex}}" bindchange="xingbieChange">
+            <view class="down-item-picker-text">{{xingbieList[xingbieIndex]}}</view>
+        </picker>
+    </view>
+    <!-- shoujihaoma，普,$column.unique  -->
+
+
+    <view class="item-box" wx:if="{{tableName=='xuesheng'}}"  >
+        <view class="item-label">手机号码</view>
+        <input  class="item-input" type="text"    placeholder="手机号码" model:value="{{shoujihaoma}}" />
+    </view>
+    <view class="item-box" wx:if="{{tableName=='xuesheng'}}">
+        <text   class="item-label"  >班级</text>
+        <picker   class="down-item-picker" mode="selector" range="{{banjiList}}" value="{{banjiIndex}}" bindchange="banjiChange">
+            <view class="down-item-picker-text">{{banjiList[banjiIndex]}}</view>
+        </picker>
+    </view>
+    <!-- jiaoshigonghao，普,去  -->
+
+
+    <view class="item-box" wx:if="{{tableName=='jiaoshi'}}"  >
+        <view class="item-label">教师工号</view>
+        <input  class="item-input" type="text"    disabled="true" placeholder="教师工号" model:value="{{jiaoshigonghao}}" />
+    </view>
+    <!-- jiaoshixingming，普,$column.unique  -->
+
+
+    <view class="item-box" wx:if="{{tableName=='jiaoshi'}}"  >
+        <view class="item-label">教师姓名</view>
+        <input  class="item-input" type="text"    placeholder="教师姓名" model:value="{{jiaoshixingming}}" />
+    </view>
+    <view class="item-box" wx:if="{{tableName=='jiaoshi'}}" >
+        <view  class="item-label"   bindtap="touxiangTap"  >头像</view>
+        <image class="item-img"   bindtap="touxiangTap"   src="{{tempPathtouxiang}}" mode="aspectFill"></image>
+    </view>
+    <!-- lianxidianhua，普,$column.unique  -->
+
+
+    <view class="item-box" wx:if="{{tableName=='jiaoshi'}}"  >
+        <view class="item-label">联系电话</view>
+        <input  class="item-input" type="text"    placeholder="联系电话" model:value="{{lianxidianhua}}" />
+    </view>
+    <view class="item-box" wx:if="{{tableName=='jiaoshi'}}">
+        <text   class="item-label"  >性别</text>
+        <picker   class="down-item-picker" mode="selector" range="{{xingbieList}}" value="{{xingbieIndex}}" bindchange="xingbieChange">
+            <view class="down-item-picker-text">{{xingbieList[xingbieIndex]}}</view>
+        </picker>
+    </view>
+<view class="btn-box">
+    <button class="save-btn" bindtap="saveTap">保存</button>
+    <button class="quite-btn" bindtap="quitTap">退出登录</button>
+
+</view>
+
+</view>
+
+</view>
+</view>
